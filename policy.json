@@ -1,0 +1,10 @@
+{	"expiration" : {"day":1},
+	"conditions": [ ["starts-with", "$key", ""],
+    				 {"bucket": "aneta.nowacka"}, 
+    				 {"acl": "public-read"},
+    				 {"success_action_redirect": "http://localhost:8080"},   
+    				 ["content-length-range", 0, 1048576],
+					 {"x-amz-meta-username": "Aneta Nowacka"},
+					 {"x-amz-meta-ip": "192.168.1.10"}
+    				]   
+}
